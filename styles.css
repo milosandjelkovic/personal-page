@@ -1,0 +1,320 @@
+ #welcome-section {
+	padding-top: 0px;
+  margin-top: 0px;
+  display: flex;
+  height: 100vh;
+	flex-basis: 0;
+}
+
+#welcome-section h1 {
+	display: none;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 3em auto;
+	background: #a1adc5;
+	font-family: "PT Sans", Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+#content-container {
+	margin: 4em 0;
+	display: flex;
+	flex-basis: 90%;
+}
+
+header {
+	padding: 3em;
+}
+#navbar {
+	display: none;
+}
+
+#navbar-real {
+	flex-basis: 30%;
+	background: #5069ac;	
+	text-align: center;
+	color: #ced5ea;
+}
+
+#navbar-real ::selection {
+	background: rgba(45, 50, 61, .99);
+	color: #ced5ea;
+}
+
+#navbar-real img {
+	padding: 8px;
+	width: 7em;
+	height: 6em;
+	border-radius: 3em;
+	border: 6px solid #ced5ea;
+}
+
+.main-links {
+	list-style: none;
+	background: #4862aa;
+	margin-bottom: 3em;
+}
+
+.main-links li{
+	padding: 0;
+	border-bottom: 1px solid #3d59a4;
+}
+
+.main-links li:nth-child(odd) {
+	border-top: 1px solid #3d59a4;
+}
+
+.main-links li a {
+	display: block;
+	padding: 1em 0;
+	color: #ced5ea;
+	text-decoration: none;
+}
+
+.main-links li:hover, .main-links li a:hover {
+	background: #a1adc5;
+	color: #2d323d;
+}
+
+.social-links {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 3em 0 3em 0;
+	padding: 0 1em;
+	list-style: none;
+}
+
+.social-links li:hover {
+	opacity: .8;
+	cursor: pointer;
+}
+
+
+.social-links a{
+	color: #ced5ea;
+	text-decoration: none;
+}
+
+.dribbble {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-repeat: no-repeat;
+}
+
+.dribbble span {
+	display: flex;
+	margin: 0 auto;
+	width: 2.1em;
+	height: 2.1em;
+	background-image: url('https://www.dropbox.com/s/78cimsw6enisc2s/dribbble-logo.png?raw=1');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 2em;
+}
+
+.dribbble a {
+	display: block;
+	margin-top: .5em;
+}
+
+.behance span {
+	display: flex;
+	margin: 0 auto;
+	width: 2.1em;
+	height: 2.1em;
+	background-image: url('https://www.dropbox.com/s/r9dwdtygkhhqkdy/behance-logo.png?raw=1');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 2em;
+}
+
+.behance a {
+	display: block;
+	margin-top: .5em;
+}
+
+.github span {
+	display: flex;
+	margin: 0 auto;
+	width: 2.1em;
+	height: 2.1em;
+	background-image: url('https://www.dropbox.com/s/sm6qn3b9zg0t6o5/github-logo.png?raw=1');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 2em;
+}
+
+.github a {
+	display: block;
+	margin-top: .5em;
+}
+
+main ::selection {
+	background: rgba(80, 105, 172, 0.99);
+	color: #ced5ea;
+}
+
+main {
+	flex-basis: 70%;
+	padding: 3em;
+	background: #2d323d;
+	color: #afb7ca;
+	list-style-position: inside;
+}
+
+h1, h2 {
+	font-size: 1.5em;
+	margin-top: 1em;
+	margin-bottom: .6em;
+	line-height: 1.4em;
+}
+
+h2 {
+	margin-bottom: .6em;
+}
+
+#tile-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#projects {
+	margin-top: 3em;
+}
+
+#projects h2 {
+	margin-bottom: 1em;
+}		
+
+.project-tile {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 48%;
+}
+
+.project-tile img {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.project-tile:hover {
+	opacity: .8;
+	cursor: pointer;
+}
+
+.project-tile a {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+dl {
+	margin-bottom: 1.5em;
+	padding: 1em;
+	background: #5069ac;
+	color: #ced5ea;
+	font-size: .9em;
+}
+
+@media (max-width: 800px) {
+
+	body {
+		margin: 0;
+		font-size: 1em;
+	}
+
+	#content-container {
+		flex-wrap: wrap;
+		flex-basis: 100%;
+		margin: 0;
+	}
+
+	header {
+		padding: 3em;
+	}
+
+	#navbar-real {
+		flex-basis: 100%;
+	}
+
+	a {
+		width: 100%;
+	}
+
+	main {
+		flex-basis: 100%;
+		padding: 2em;
+	}
+
+	dl {
+		margin-bottom: 2.5em;
+	}
+
+}
+
+@media (max-width: 1000px) {
+	body {
+		margin: 0;
+		font-size: 1em;
+	}
+	
+	#content-container {
+		flex-basis: 100%;
+		margin: 0;
+	}
+	
+	.project-tile {
+		flex-basis: 100%;
+	}
+
+	dl {
+		margin-bottom: 2.5em;
+	}
+
+}
+
+@media (min-width: 1000px) {
+	body {
+		margin: 0;
+		font-size: 1.1em;
+	}
+
+	#content-container {
+		box-shadow: 0px 0px 36px 0px rgba(88, 117, 175, 0.8);
+	}
+
+	#tile-container {
+		justify-content: space-between;
+	}
+}
+
+@media (min-width: 1600px) {
+
+	body {
+		font-size: 1.4em;
+	}
+
+	header {
+		padding: 5em;
+	}
+
+	main {
+		padding: 5em;
+	}
+}
