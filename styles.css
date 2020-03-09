@@ -6,10 +6,6 @@
 	flex-basis: 0;
 }
 
-#welcome-section h1 {
-	display: none;
-}
-
 * {
 	box-sizing: border-box;
 	margin: 0;
