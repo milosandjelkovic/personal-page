@@ -114,31 +114,24 @@ nav {
 	text-decoration: none;
 }
 
+.dribbble, .behance, .github {
+	display: block;
+        background-position: center;
+        background-size: 2em;
+	background-repeat: no-repeat;
+        padding: 4.5em 0 0 0;
+}
+
 .dribbble {
-	display: block;
-        background: url('https://www.dropbox.com/s/78cimsw6enisc2s/dribbble-logo.png?raw=1'); 
-        background-position: center;
-        background-size: 2em;
-	background-repeat: no-repeat;
-        padding: 4em 0 0 0;
+    background-image: url('img/dribbble-logo.png'); 
 }
 
-.behance {
-	display: block;
-        background: url('https://www.dropbox.com/s/r9dwdtygkhhqkdy/behance-logo.png?raw=1');
-        background-position: center;
-        background-size: 2em;
-	background-repeat: no-repeat;
-        padding: 4em 0 0 0;
+.behance{
+    background-image: url('img/behance-logo.png'); 
 }
 
-.github {
-	display: block;
-        background: url('https://www.dropbox.com/s/sm6qn3b9zg0t6o5/github-logo.png?raw=1');
-        background-position: center;
-        background-size: 2em;
-	background-repeat: no-repeat;
-        padding: 4em 0 0 0;
+.github{
+    background-image: url('img/github-logo.png'); 
 }
 
 main ::selection {
