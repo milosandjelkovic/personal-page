@@ -32,6 +32,11 @@ body {
 header {
 	padding: 3em;
 }
+
+nav {
+    margin-bottom: 2em;
+}
+
 #navbar {
 	display: none;
 }
@@ -59,7 +64,7 @@ header {
 .main-links {
 	list-style: none;
 	background: #4862aa;
-	margin-bottom: 3em;
+	margin-bottom: 2em;
 }
 
 .main-links li{
@@ -87,9 +92,15 @@ header {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	margin: 3em 0 3em 0;
-	padding: 0 1em;
+	margin: 0;
+	padding: 0 2em;
 	list-style: none;
+}
+
+.social-links li {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1.6em;
 }
 
 .social-links li:hover {
@@ -104,58 +115,30 @@ header {
 }
 
 .dribbble {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	background-repeat: no-repeat;
-}
-
-.dribbble span {
-	display: flex;
-	margin: 0 auto;
-	width: 2.1em;
-	height: 2.1em;
-	background-image: url('https://www.dropbox.com/s/78cimsw6enisc2s/dribbble-logo.png?raw=1');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: 2em;
-}
-
-.dribbble a {
 	display: block;
-	margin-top: .5em;
-}
-
-.behance span {
-	display: flex;
-	margin: 0 auto;
-	width: 2.1em;
-	height: 2.1em;
-	background-image: url('https://www.dropbox.com/s/r9dwdtygkhhqkdy/behance-logo.png?raw=1');
-	background-position: center center;
+        background: url('https://www.dropbox.com/s/78cimsw6enisc2s/dribbble-logo.png?raw=1'); 
+        background-position: center;
+        background-size: 2em;
 	background-repeat: no-repeat;
-	background-size: 2em;
+        padding: 4em 0 0 0;
 }
 
-.behance a {
+.behance {
 	display: block;
-	margin-top: .5em;
-}
-
-.github span {
-	display: flex;
-	margin: 0 auto;
-	width: 2.1em;
-	height: 2.1em;
-	background-image: url('https://www.dropbox.com/s/sm6qn3b9zg0t6o5/github-logo.png?raw=1');
-	background-position: center center;
+        background: url('https://www.dropbox.com/s/r9dwdtygkhhqkdy/behance-logo.png?raw=1');
+        background-position: center;
+        background-size: 2em;
 	background-repeat: no-repeat;
-	background-size: 2em;
+        padding: 4em 0 0 0;
 }
 
-.github a {
+.github {
 	display: block;
-	margin-top: .5em;
+        background: url('https://www.dropbox.com/s/sm6qn3b9zg0t6o5/github-logo.png?raw=1');
+        background-position: center;
+        background-size: 2em;
+	background-repeat: no-repeat;
+        padding: 4em 0 0 0;
 }
 
 main ::selection {
