@@ -123,15 +123,15 @@ nav {
 }
 
 .dribbble {
-    background-image: url('img/dribbble-logo.png'); 
+    background-image: url('img/icons/dribbble-logo.png'); 
 }
 
 .behance{
-    background-image: url('img/behance-logo.png'); 
+    background-image: url('img/icons/behance-logo.png'); 
 }
 
 .github{
-    background-image: url('img/github-logo.png'); 
+    background-image: url('img/icons/github-logo.png'); 
 }
 
 main ::selection {
